@@ -46,10 +46,11 @@ export default function Textform(props) {  //prop means passsing propetyy
     <div className="container my-3"   style={{color:props.mode==='dark'?'white':'black'}}>
 
       <h1>{text}</h1>
-      <p>your text has {text.length}characters</p>   
-      <p>And {text.split(" ").length} words</p>  
-
-      <p>Time taken to read words is  {text.split(" ").length*0.008}minutes</p>
+      <p>your text has {text.length}characters</p>  
+      {text.length>0 && <p>{(text.split(" ").length) -1}</p>} 
+           
+      <p>  Time taken to read words is  {text.split(" ").length*0.008}minutes
+      </p>
       <h2>Preview</h2>
       <p>{text.length>0?text:"Enter text to preview it"}</p>
 
