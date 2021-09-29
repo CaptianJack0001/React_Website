@@ -5,13 +5,13 @@ export default function About() {
   const [myStyle, setMyStyle] = useState({
 
     color:'white',
-    backgroundColor:'black'
+    backgroundColor:'grey'
   })
    const toggleStyle=()=>{
     if(myStyle.color==='white')
     {
               setMyStyle({
-               color:'black',
+               color:'grey',
                backgroundColor:'white'
              })
              setText("enable dark mode")
@@ -20,7 +20,7 @@ export default function About() {
     else {
        setMyStyle({
         color:'white',
-        backgroundColor:'black'
+        backgroundColor:'grey'
       })
       setText("enable white mode")
     }
